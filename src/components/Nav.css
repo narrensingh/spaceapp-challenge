@@ -1,0 +1,12 @@
+.nav {
+  height: 5vh;
+  background-color: black;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
+.nav__logo {
+  object-fit: contain;
+  height: 40px;
+}

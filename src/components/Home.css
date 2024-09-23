@@ -1,67 +1,18 @@
-.home__topLeftLogo {
-  object-fit: contain;
-  height: 50px;
-}
-
 .home {
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
-}
-
-.home__topRight {
-  padding-right: 15px;
-}
-
-.nav__link {
-  padding: 5px;
-  margin: 5px;
-  cursor: pointer;
-}
-
-.nav__link:hover {
-  background-color: grey;
-  border-radius: 5px;
-}
-
-.home__top {
-  width: 100%;
-  background-color: black;
-  position: fixed;
-  top: 0;
-  z-index: 200;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.home__middle1 {
-  flex-grow: 1;
-  position: relative;
+  user-select: none;
   background-image: url('https://www.shutterstock.com/shutterstock/videos/3467105093/thumb/1.jpg?ip=x480');
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
-.section {
-  height: 100vh;
+.home__first {
   position: relative;
-  transition: transform 0.9s ease-in-out;
+  height: 95vh;
 }
 
-.home__middle2 {
-  flex-grow: 1;
-  position: relative;
-  background-image: url('https://www.shutterstock.com/shutterstock/videos/3467105093/thumb/1.jpg?ip=x480');
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('images/README/TESLA.ttf') format('truetype');
 }
 
-.zoom-in {
-  transform: scale(1.2); /* Increase size by 20% */
-}
-
-.AboutUs {
-  height: 100vh;
-  background-image: url('https://www.shutterstock.com/shutterstock/videos/3467105093/thumb/1.jpg?ip=x480');
+.explore {
+  font-family: 'MyCustomFont', sans-serif;
 }
