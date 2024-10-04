@@ -1,156 +1,104 @@
-import React, { useEffect, useRef, useState } from 'react';
-import './Home.css';
-import logo from './images/logo.jpeg';
+import React, { useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import { Link } from 'react-scroll';
+import './Home.css';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import { Link } from 'react-router-dom';
+import exobg from './images/types.png';
 
-function Home() {
-  const [startTyping, setStartTyping] = useState(false); // To control typing in home__middle2
-  const [zoomIn, setZoomIn] = useState(false); // To control the zoom effect
-  const middle2Ref = useRef(null); // Ref for home__middle2 section
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setStartTyping(true); // Start typing when the section is in view
-          setZoomIn(true); // Start the zoom effect when in view
-        }
-      },
-      { threshold: 0.5 } // Trigger when 50% of the section is visible
-    );
-
-    if (middle2Ref.current) {
-      observer.observe(middle2Ref.current);
-    }
-
-    return () => {
-      if (middle2Ref.current) {
-        observer.unobserve(middle2Ref.current);
-      }
-    };
-  }, []);
-
+const Home = () => {
   return (
     <div className="home">
-      <div className="home__top">
-        <div className="home__topLeft">
-          <img className="home__topLeftLogo" src={logo} alt="logo" />
+      <div className="home__first">
+        <TypeAnimation
+          sequence={[1000, 'All About Exoplanets.', 1000, 'Search For Life.']}
+          wrapper="h1"
+          speed={40}
+          style={{
+            color: 'white',
+            position: 'absolute',
+            top: '15%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            fontWeight: 300,
+            fontSize: '70px',
+            zIndex: 200,
+          }}
+        />
+        <h1 className="explore">EXPLORE</h1>
+        <img src={exobg} alt="" className="exobg" />
+      </div>
+      <div className="home__second">
+        <div className="home__secondTl">
+          <h1>What Are Exoplanets ?</h1>
+          <p>
+            An exoplanet is any planet beyond our solar system. Most of them
+            orbit other stars, but some free-floating exoplanets, called rogue
+            planets, are untethered to any star. We’ve confirmed more than 5,600
+            exoplanets out of the billions that we believe exist.
+          </p>
         </div>
-        <div className="home__topRight">
-          <Link
-            to="section1"
-            smooth={true}
-            duration={1000}
-            className="nav__link"
-            style={{ color: 'white' }}
-          >
-            Home
-          </Link>
-          <Link
-            to="section2"
-            smooth={true}
-            duration={1000}
-            className="nav__link"
-            style={{ color: 'white' }}
-          >
-            Overview
-          </Link>
-          <Link
-            to="about"
-            smooth={true}
-            duration={1000}
-            className="nav__link"
-            style={{ color: 'white' }}
-          >
-            AboutUs
-          </Link>
+        <div className="home__secondBr">
+          <h1>Whats The Closest?</h1>
+          <p>
+            The closest known exoplanet to Earth, Proxima Centauri b, is still
+            about 4 light-years away
+          </p>
+        </div>
+        <div className="home__secondTr">
+          <h1>Is There Life Beyond Earth?</h1>
+          <p>
+            The big question, “Is there life beyond Earth?” has a catch: we
+            don’t really know how to define life perfectly. But that’s okay—we
+            just need to find clues in a distant planet’s atmosphere that
+            suggest life, based on what we understand from Earth.
+          </p>
+        </div>
+        <div className="home__secondBl">
+          <h1>What is Universe?</h1>
+          <p>
+            The universe is everything. It includes all of space, and all the
+            matter and energy that space contains. It even includes time itself
+            and, of course, it includes you.
+          </p>
         </div>
       </div>
-      <div className="home__sections">
-        <div className="section home__middle1" id="section1">
-          <TypeAnimation
-            sequence={[1000, 'Exoplanets.']}
-            wrapper="span"
-            speed={40}
-            style={{
-              fontSize: '96px',
-              display: 'inline-block',
-              color: 'white',
-              position: 'absolute',
-              top: '40%',
-              left: '10%',
-            }}
-          />
-          <TypeAnimation
-            sequence={[
-              2000,
-              'An exoplanet is any planet beyond our solar system. Most of them orbit other stars, but some free-floating exoplanets, called rogue planets, are untethered to any star. We’ve confirmed more than 5,600 exoplanets out of the billions that we believe exist.',
-            ]}
-            wrapper="span"
-            speed={80}
-            style={{
-              fontSize: '20px',
-              display: 'inline-block',
-              color: 'white',
-              position: 'absolute',
-              top: '60%',
-              left: '10%',
-              maxWidth: '500px',
-              lineHeight: '30px',
-            }}
-          />
-        </div>
-
-        {/* Section 2 with zoom-in effect */}
-        <div
-          className={`section home__middle2 ${zoomIn ? 'zoom-in' : ''}`}
-          id="section2"
-          ref={middle2Ref}
-        >
-          {startTyping && (
-            <>
-              <TypeAnimation
-                sequence={[1000, 'Revolutionising Exoplanet Education.']}
-                wrapper="span"
-                speed={40}
-                style={{
-                  fontSize: '60px',
-                  display: 'inline-block',
-                  color: 'white',
-                  position: 'absolute',
-                  top: '30%',
-                  left: '20%',
-                }}
-              />
-              <TypeAnimation
-                sequence={[
-                  3500,
-                  'We aim to bla bla bla.... should edit in future',
-                ]}
-                wrapper="span"
-                speed={80}
-                style={{
-                  fontSize: '20px',
-                  display: 'inline-block',
-                  color: 'white',
-                  position: 'absolute',
-                  top: '50%',
-                  left: '20%',
-                  maxWidth: '500px',
-                  lineHeight: '30px',
-                }}
-              />
-            </>
-          )}
-        </div>
-
-        <div className="AboutUs" id="about">
-          AboutUs
+      <div className="home__gallery">
+        <h1 className="home__galleryHead">Get Started</h1>
+        <div className="classes">
+          <Link to="/find">
+            <div className="classify box1">
+              <h2>Find</h2>
+              <span>→</span>
+            </div>
+          </Link>
+          <Link to="/find">
+            <div className="classify box2">
+              <h2>Goals</h2>
+              <span>→</span>
+            </div>
+          </Link>
+          <Link to="/types">
+            <div className="classify box3">
+              <h2>Types Of Exoplanets</h2>
+              <span>→</span>
+            </div>
+          </Link>
+          <Link to="/find">
+            <div className="classify box4">
+              <h2>Gallery</h2>
+              <span>→</span>
+            </div>
+          </Link>
+          <Link to="/find">
+            <div className="classify box5">
+              <h2>quiz</h2>
+              <span>→</span>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Home;

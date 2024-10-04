@@ -1,0 +1,134 @@
+.find1 {
+  background-image: url('https://www.shutterstock.com/shutterstock/videos/3467105093/thumb/1.jpg?ip=x480');
+  height: 95vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.find1header {
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-size: 90px;
+  z-index: 100;
+}
+
+.findp1 {
+  color: white;
+  width: 50%;
+  text-align: center;
+  color: rgb(48, 219, 91);
+  line-height: 30px;
+  font-size: 25px;
+}
+
+.find1img {
+  position: absolute;
+  top: 22%;
+  right: 5%;
+  height: 350px;
+  object-fit: contain;
+  animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px); /* Start at original position */
+  }
+  50% {
+    transform: translateY(-20px); /* Move up by 20px */
+  }
+  100% {
+    transform: translateY(0px); /* Move back to original position */
+  }
+}
+
+.find2 {
+  height: 95vh;
+  background-image: url('https://www.shutterstock.com/shutterstock/videos/3467105093/thumb/1.jpg?ip=x480');
+}
+
+span {
+  color: white;
+  font-size: 27px;
+}
+
+.find2 {
+  color: white;
+  background-image: url('https://www.shutterstock.com/shutterstock/videos/3467105093/thumb/1.jpg?ip=x480');
+}
+
+.find2header {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  padding: 40px;
+}
+
+.find2span {
+  color: rgb(48, 219, 91);
+  font-size: 30px;
+}
+
+.methodHeader {
+  text-transform: uppercase;
+}
+
+.method {
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.methodHeader {
+  color: yellow;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.methodP {
+  line-height: 30px;
+  font-size: 25px;
+}
+
+.method1img {
+  height: 400px;
+  object-fit: contain;
+  float: right;
+}
+
+.find3 {
+  height: 95vh;
+  color: white;
+  background-image: url('https://www.shutterstock.com/shutterstock/videos/3467105093/thumb/1.jpg?ip=x480');
+}
+
+.m2i {
+  height: 600px;
+  object-fit: contain;
+  float: right;
+}
+
+.find4,
+.find5,
+.find6 {
+  height: 95vh;
+  color: white;
+  background-image: url('https://www.shutterstock.com/shutterstock/videos/3467105093/thumb/1.jpg?ip=x480');
+}
+
+.m3i,
+.m4i {
+  height: 500px;
+  object-fit: contain;
+  float: right;
+  display: block;
+}
+
+.m5i {
+  height: 450px;
+  object-fit: contain;
+  float: right;
+  display: block;
+  margin-top: 30px;
+}
