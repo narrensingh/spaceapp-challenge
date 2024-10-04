@@ -24,6 +24,14 @@
 
 .explore {
   font-family: 'MyCustomFont', sans-serif;
+  color: black;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 100;
+  font-size: 80px;
+  z-index: 200;
 }
 
 .home__second {
@@ -101,6 +109,7 @@
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 0px 0px rgba(0, 0, 0, 1);
+  cursor: pointer;
 }
 
 .classes {
@@ -122,20 +131,14 @@
   background-color: rgba(47, 219, 90, 0.8);
   border-radius: 20px;
   height: 20%;
-}
-
-.classify:hover {
-  -webkit-box-shadow: 0px 0px 27px 2px rgba(47, 219, 90, 1);
-  -moz-box-shadow: 0px 0px 27px 2px rgba(47, 219, 90, 1);
-  box-shadow: 0px 0px 27px 2px rgba(47, 219, 90, 1);
-  cursor: pointer;
-  transform: scale(1.05);
+  color: white;
 }
 
 .box1 {
   background-image: url('https://w0.peakpx.com/wallpaper/407/360/HD-wallpaper-dark-cosmos-exoplanet-red-exoplanet-dark-cosmos-space-cosmos-dark-planet-space-exoplanet.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  margin-right: 30px;
 }
 
 .classify span {
@@ -150,19 +153,62 @@
 }
 
 .box2 {
-  background-image: url('https://live.staticflickr.com/65535/51604441745_0f1a791954_b.jpg');
+  background-image: url('https://i.pinimg.com/1200x/dc/ee/1b/dcee1bd708611370a54bc7351967190a.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  margin-right: 30px;
 }
 
 .box3 {
   background-image: url('https://scitechdaily.com/images/New-Research-Reveals-That-Exoplanets-Can-Be-Divided-Into-Three-Groups.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  margin-right: 30px;
 }
 
 .box4 {
-  background-image: url('https://w0.peakpx.com/wallpaper/610/334/HD-wallpaper-premium-vertical-of-planet-in-space-outer-dark-space-surface-of-planet-sphere-view-from-orbit-elements-of-this-furnished-earth-vertical.jpg');
+  background-image: url('https://img.wallscloud.net/uploads/thumb/1232727708/exoplanet-1-52780-540x1080-MM-80.webp');
   background-repeat: no-repeat;
   background-size: cover;
+  margin-right: 30px;
+}
+
+.box5 {
+  background-image: url('https://w0.peakpx.com/wallpaper/941/698/HD-wallpaper-burned-exoplanet-red-cosmos-dark-planet-planet-red-saturn-ring-universe.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.classes {
+  overflow-x: scroll;
+  overflow: auto; /* Ensure the content is scrollable */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;
+}
+
+.home__first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.exobg {
+  position: absolute;
+  bottom: 0px;
+  height: 600px;
+  object-fit: contain;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px); /* Start at original position */
+  }
+  50% {
+    transform: translateY(-20px); /* Move up by 20px */
+  }
+  100% {
+    transform: translateY(0px); /* Move back to original position */
+  }
 }

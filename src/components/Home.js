@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import './Home.css';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import { Link } from 'react-router-dom';
+import exobg from './images/types.png';
 
 const Home = () => {
   return (
@@ -14,27 +16,16 @@ const Home = () => {
           style={{
             color: 'white',
             position: 'absolute',
-            top: '30%',
+            top: '15%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
             fontWeight: 300,
             fontSize: '70px',
+            zIndex: 200,
           }}
         />
-        <TypeAnimation
-          sequence={[6500, 'EXPLORE']}
-          className="explore"
-          style={{
-            color: 'rgb(48,219,91)',
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            fontWeight: 100,
-            fontSize: '80px',
-          }}
-          speed={20}
-        />
+        <h1 className="explore">EXPLORE</h1>
+        <img src={exobg} alt="" className="exobg" />
       </div>
       <div className="home__second">
         <div className="home__secondTl">
@@ -74,22 +65,36 @@ const Home = () => {
       <div className="home__gallery">
         <h1 className="home__galleryHead">Get Started</h1>
         <div className="classes">
-          <div className="classify box1">
-            <h2>How We Find And Classify</h2>
-            <span>→</span>
-          </div>
-          <div className="classify box2">
-            <h2>Goals Of NASA's Exoplanet Exploration Program</h2>
-            <span>→</span>
-          </div>
-          <div className="classify box3">
-            <h2>Exoplanet Types</h2>
-            <span>→</span>
-          </div>
-          <div className="classify box4">
-            <h2>Other NASA's Resources</h2>
-            <span>→</span>
-          </div>
+          <Link to="/find">
+            <div className="classify box1">
+              <h2>Find</h2>
+              <span>→</span>
+            </div>
+          </Link>
+          <Link to="/find">
+            <div className="classify box2">
+              <h2>Goals</h2>
+              <span>→</span>
+            </div>
+          </Link>
+          <Link to="/types">
+            <div className="classify box3">
+              <h2>Types Of Exoplanets</h2>
+              <span>→</span>
+            </div>
+          </Link>
+          <Link to="/find">
+            <div className="classify box4">
+              <h2>Gallery</h2>
+              <span>→</span>
+            </div>
+          </Link>
+          <Link to="/find">
+            <div className="classify box5">
+              <h2>quiz</h2>
+              <span>→</span>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
