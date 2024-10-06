@@ -65,7 +65,7 @@ const Home = () => {
       <div className="home__gallery">
         <h1 className="home__galleryHead">Get Started</h1>
         <div className="classes">
-          <Link to="/spaceapp-challenge/spaceapp-challenge/find">
+          <Link to="/find">
             <div className="classify box1">
               <h2>Find</h2>
               <span>→</span>
@@ -77,13 +77,13 @@ const Home = () => {
               <span>→</span>
             </div>
           </Link>
-          <Link to="/spaceapp-challenge/spaceapp-challenge/types">
+          <Link to="/types">
             <div className="classify box3">
               <h2>Types Of Exoplanets</h2>
               <span>→</span>
             </div>
           </Link>
-          <Link to="/spaceapp-challenge/spaceapp-challenge/gallery">
+          <Link to="/gallery">
             <div className="classify box4">
               <h2>Gallery</h2>
               <span>→</span>
