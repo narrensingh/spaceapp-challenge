@@ -13,9 +13,9 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/spaceapp-challenge/find" element={<Find />} />
-          <Route path="/spaceapp-challenge/types" element={<Types />} />
-          <Route path="/spaceapp-challenge/gallery" element={<Gallery />} />
+          <Route path="/find" element={<Find />} />
+          <Route path="/types" element={<Types />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
       </Router>
     </div>
