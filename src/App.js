@@ -12,10 +12,10 @@ function App() {
       <Router>
         <Nav />
         <Routes>
-          <Route path="/exoedu" element={<Home />} />
-          <Route path="/exoedu/find" element={<Find />} />
-          <Route path="/exoedu/types" element={<Types />} />
-          <Route path="/exoedu/gallery" element={<Gallery />} />
+          <Route path="/spaceapp-challenge" element={<Home />} />
+          <Route path="/spaceapp-challenge/find" element={<Find />} />
+          <Route path="/spaceapp-challenge/types" element={<Types />} />
+          <Route path="/spaceapp-challenge/gallery" element={<Gallery />} />
         </Routes>
       </Router>
     </div>

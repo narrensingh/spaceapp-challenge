@@ -1,7 +1,7 @@
 {
   "name": "exo-edu",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/exoedu",
+  "homepage": "https://gitname.github.io/spaceapp-challenge",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.3",
