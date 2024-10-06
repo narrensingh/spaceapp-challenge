@@ -5,8 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  cursor: url(https://cdn.custom-cursor.com/db/7458/32/starter-abstract-space-cursor.png),
-    default !important;
 }
 
 code {
