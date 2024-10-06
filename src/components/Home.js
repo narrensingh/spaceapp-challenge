@@ -83,19 +83,33 @@ const Home = () => {
               <span>→</span>
             </div>
           </Link>
-          <Link to="/find">
+          <Link to="/gallery">
             <div className="classify box4">
               <h2>Gallery</h2>
               <span>→</span>
             </div>
           </Link>
-          <Link to="/find">
+          <Link to="">
             <div className="classify box5">
-              <h2>quiz</h2>
+              <h2>Quiz</h2>
+              <p>Yet to be added :)</p>
               <span>→</span>
             </div>
           </Link>
         </div>
+      </div>
+      <div className="aboutUs">
+        <h2 className="aboutUs__header">About Us</h2>
+        <p className="aboutUs__content">
+          We are IITMStellars, a passionate team of innovators from the Indian
+          Institute of Technology Madras, comprising
+          <span> Narren Singh, Nuthan Reddy, Gaganram, and Vismay Shah</span> .
+          United by our love for space exploration and cutting-edge technology,
+          we’re competing in NASA’s [Space-app-challenge]. Our mission is to
+          push the boundaries of innovation, solve real-world challenges, and
+          contribute to the future of space science. Through collaboration and
+          determination, we aim to make a stellar impact!
+        </p>
       </div>
     </div>
   );

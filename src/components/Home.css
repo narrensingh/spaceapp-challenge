@@ -103,7 +103,7 @@
 }
 
 .classify {
-  height: 562.05px;
+  height: 525.05px;
   width: 304.73px;
   border-radius: 20px;
   position: relative;
@@ -181,9 +181,7 @@
 
 .classes {
   overflow-x: scroll;
-  overflow: auto; /* Ensure the content is scrollable */
-  scrollbar-width: none; /* For Firefox */
-  -ms-overflow-style: none;
+  overflow: auto;
 }
 
 .home__first {
@@ -198,7 +196,7 @@
   bottom: 0px;
   height: 600px;
   object-fit: contain;
-  animation: float 4s ease-in-out infinite;
+  animation: float 7s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -211,4 +209,26 @@
   100% {
     transform: translateY(0px); /* Move back to original position */
   }
+}
+
+.aboutUs {
+  color: white;
+  padding: 50px;
+}
+
+.aboutUs__header {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.aboutUs__content {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.box5 p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
 }

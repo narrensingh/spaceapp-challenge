@@ -66,6 +66,11 @@ const Find = () => {
             alt="m3i"
             className="m3i"
           />
+          <p className="imagedes">
+            Four exoplanets of the HR 8799 system imaged by the W. M. Keck
+            Observatory over the course of seven years. Motion is interpolated
+            from annual observations.
+          </p>
         </div>
       </div>
       <div className="find5">

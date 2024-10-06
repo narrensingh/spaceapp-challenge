@@ -1,0 +1,29 @@
+.gallery {
+  background-image: url('https://www.shutterstock.com/shutterstock/videos/3467105093/thumb/1.jpg?ip=x480');
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.gallery__header {
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.gallery__image {
+  height: 300px;
+  object-fit: contain;
+}
+
+.gallery__images1 {
+  display: flex;
+  overflow: scroll;
+}
+
+.gallery__images2 {
+  margin-top: 20px;
+  display: flex;
+  overflow: scroll;
+}

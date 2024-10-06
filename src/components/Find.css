@@ -29,7 +29,7 @@
   position: absolute;
   top: 22%;
   right: 5%;
-  height: 350px;
+  height: 300px;
   object-fit: contain;
   animation: float 4s ease-in-out infinite;
 }
@@ -116,7 +116,14 @@ span {
   color: white;
   background-image: url('https://www.shutterstock.com/shutterstock/videos/3467105093/thumb/1.jpg?ip=x480');
 }
+.imagedes {
+  line-height: 20px;
+  font-size: 10px;
 
+  color: yellow;
+  /* text-align: right; */
+  width: 500px;
+}
 .m3i,
 .m4i {
   height: 500px;

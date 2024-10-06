@@ -5,9 +5,34 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: url(https://cdn.custom-cursor.com/db/7458/32/starter-abstract-space-cursor.png),
+    default !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: black; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey; /* Color of the scroll thumb */
+  border-radius: 6px; /* Rounded corners on the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darkgrey; /* Color of the scroll thumb when hovered */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Makes the scrollbar thinner */
+  scrollbar-color: grey black; /* thumb color first, track color second */
 }
