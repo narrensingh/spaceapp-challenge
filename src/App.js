@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Nav />
         <Routes>
-          <Route path="/spaceapp-challenge" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/spaceapp-challenge/find" element={<Find />} />
           <Route path="/spaceapp-challenge/types" element={<Types />} />
           <Route path="/spaceapp-challenge/gallery" element={<Gallery />} />
