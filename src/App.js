@@ -12,10 +12,10 @@ function App() {
       <Router>
         <Nav />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/find" element={<Find />} />
-          <Route path="/types" element={<Types />} />
-          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/spaceapp-challenge" element={<Home />} />
+          <Route path="/spaceapp-challenge/find" element={<Find />} />
+          <Route path="/spaceapp-challenge/types" element={<Types />} />
+          <Route path="/spaceapp-challenge/gallery" element={<Gallery />} />
         </Routes>
       </Router>
     </div>
