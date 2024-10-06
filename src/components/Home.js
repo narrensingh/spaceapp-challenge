@@ -65,25 +65,25 @@ const Home = () => {
       <div className="home__gallery">
         <h1 className="home__galleryHead">Get Started</h1>
         <div className="classes">
-          <Link to="/find">
+          <Link to="/exoedu/find">
             <div className="classify box1">
               <h2>Find</h2>
               <span>→</span>
             </div>
           </Link>
-          <Link to="/find">
+          <Link to="">
             <div className="classify box2">
               <h2>Goals</h2>
               <span>→</span>
             </div>
           </Link>
-          <Link to="/types">
+          <Link to="/exoedu/types">
             <div className="classify box3">
               <h2>Types Of Exoplanets</h2>
               <span>→</span>
             </div>
           </Link>
-          <Link to="/gallery">
+          <Link to="/exoedu/gallery">
             <div className="classify box4">
               <h2>Gallery</h2>
               <span>→</span>
