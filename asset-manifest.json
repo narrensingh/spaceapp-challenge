@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/exoedu/static/css/main.0272b25b.css",
-    "main.js": "/exoedu/static/js/main.93d7816b.js",
-    "static/js/453.5dd231af.chunk.js": "/exoedu/static/js/453.5dd231af.chunk.js",
-    "static/media/types.png": "/exoedu/static/media/types.1310d1fcc568acfe2fbd.png",
-    "static/media/exoplanet3.jpg": "/exoedu/static/media/exoplanet3.1fefe02df785c0755fd6.jpg",
-    "static/media/typesheader.jpg": "/exoedu/static/media/typesheader.052407770728370691af.jpg",
-    "static/media/logo.jpeg": "/exoedu/static/media/logo.d5c8f90f487ea69b5eb1.jpeg",
-    "static/media/exo2.jpg": "/exoedu/static/media/exo2.4e55e100d63e254a8646.jpg",
-    "static/media/TESLA.ttf": "/exoedu/static/media/TESLA.7e1592bd859398505313.ttf",
-    "index.html": "/exoedu/index.html",
-    "main.0272b25b.css.map": "/exoedu/static/css/main.0272b25b.css.map",
-    "main.93d7816b.js.map": "/exoedu/static/js/main.93d7816b.js.map",
-    "453.5dd231af.chunk.js.map": "/exoedu/static/js/453.5dd231af.chunk.js.map"
+    "main.css": "/spaceapp-challenge/static/css/main.0c9dc47f.css",
+    "main.js": "/spaceapp-challenge/static/js/main.f14e616e.js",
+    "static/js/453.5dd231af.chunk.js": "/spaceapp-challenge/static/js/453.5dd231af.chunk.js",
+    "static/media/types.png": "/spaceapp-challenge/static/media/types.1310d1fcc568acfe2fbd.png",
+    "static/media/exoplanet3.jpg": "/spaceapp-challenge/static/media/exoplanet3.1fefe02df785c0755fd6.jpg",
+    "static/media/typesheader.jpg": "/spaceapp-challenge/static/media/typesheader.052407770728370691af.jpg",
+    "static/media/logo.jpeg": "/spaceapp-challenge/static/media/logo.d5c8f90f487ea69b5eb1.jpeg",
+    "static/media/exo2.jpg": "/spaceapp-challenge/static/media/exo2.4e55e100d63e254a8646.jpg",
+    "static/media/TESLA.ttf": "/spaceapp-challenge/static/media/TESLA.7e1592bd859398505313.ttf",
+    "index.html": "/spaceapp-challenge/index.html",
+    "main.0c9dc47f.css.map": "/spaceapp-challenge/static/css/main.0c9dc47f.css.map",
+    "main.f14e616e.js.map": "/spaceapp-challenge/static/js/main.f14e616e.js.map",
+    "453.5dd231af.chunk.js.map": "/spaceapp-challenge/static/js/453.5dd231af.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0272b25b.css",
-    "static/js/main.93d7816b.js"
+    "static/css/main.0c9dc47f.css",
+    "static/js/main.f14e616e.js"
   ]
 }
